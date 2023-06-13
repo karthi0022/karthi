@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css);
+    .container{
+        width: 400px;
+        min-height: 100px;
+        text-align: center;
+     color: #04AA6D;
+ border-spacing: 50px;
+color: chartreuse;
+
+        
+    }
+    nav{
+        display: flex;
+        width: 1200px;
+        justify-content: space-around;
+        height: 70px;
+        line-height:50px;
+        z-index: 110;
+       
+    }
+    .logo{
+        display: flex;
+        font-size: 40px;
+        color: rgb(201, 198, 17);
+        letter-spacing: 3px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    b{
+        font-size: 70px;
+        color: rgb(185, 25, 25);
+    }
+    .navitems{
+        list-style: none;
+        margin: 0 15px;
+    }
+.navitems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navitems li a{
+    font-size: 25px;
+    color: rgb(189, 201, 18);
+    letter-spacing: 10px;
+    text-decoration: none;
+     text-transform: capitalize;
+}
+.navitemsli:hover a{
+    color: aquamarine;
+} 
+.link a{
+    font-size: 3px;
+    color: aquamarine;
+    margin: 25px 10px;
+}
+.wrapper{
+    display: flex;
+    width: 90%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    overflow: hidden;
+    text-align: 100px;
+}
+.cols{
+    width: 50%;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: aquamarine;
+}
+.topline::after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    bottom: 10px;
+    background-color: black;
+}
+h1{
+    display: block;
+    font-size: 50px;
+    font-weight: 100px;
+    color: rgb(187, 190, 22);
+text-align: right;
+
+}
+.multitext{
+    color: rgb(39, 192, 197);
+    text-transform:capitalize ;
+    text-align: center;
+    width: 10px;
+    height: 0px;
+}
+p{
+    display: block;
+    width: 100px;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: rgb(47, 150, 150);
+}
+.cursor{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(17, 11, 19);
+    background-color: black;
+    padding: 8px 4px;
+    margin: 4px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+img{
+        width: 600px;
+        height:300px;
+        float: center ;
+        max-width: 400px;
+        padding: 100px;
+        border: 100%;
+        shape-margin: 2px;
+        width: 100%;
+  height: auto;
+  float: left; 
+  max-width: 235px;
+    }
+.container{
+    width:200px;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    float:left;
+}
+a{
+	text-decoration:none;
+}
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.s-heading{
+	text-align:center;
+}
+.s-heading h1{
+	color:#576975;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+.s-heading p{
+	color: rgba(6, 109, 179, 0.692);
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 400px;
+	padding: 10px ;
+	height: 300px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+}
+.s-box img{
+	height: 200px;
+}
+.s-box h1{
+	color:#576975;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+	
+}
+.s-box p{
+	color: rgba(87,105,117,0.90);
+	text-align: center;
+}
+.s-btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border:1px solid rgba(16, 153, 172, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#576975;
+	margin-top:10px; 
+}
+.bar{
+	width: 100px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	background-color:#4a90e2; 
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+	animation: bar 0.5s;
+    text-align: center;
+}
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+	transition: all ease 0.3s;
+}
+.s-btn:hover{
+	background-color:#4a90e2;
+	border: 1px solid #4a90e2;
+	color:#FFFFFF;
+	transition: all ease 0.3s;
+}
+.s-box:hover .bar{
+	display: block;
+    background-color: aqua;
+}
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+		
+	}	
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+	
+
+}
+.s-box:hover{
+    box-shadow: #576975;
+}
+.container{
+    padding: 2px 10px;
+  display: inline;
+  float: center;
+}
+.card{
+    width: 500px;
+    height: 40px;
+text-align: center;
+
+}
+.box{
+    column-count: 3;
+    font-size: 10px;
+    color: burlywood;
+    column-gap: 1;
+}
+.progress-container {
+    width: 200%;
+    height: px;
+    padding-right: 200%;
+    background-color: rgb(42, 61, 23);
+    display: flex;
+    font-size: larger;
+} 
+p.ex1 {
+  direction: rtl;
+  unicode-bidi: normal;
+  color: azure;
+  text-align: left;
+font-size: 15PX;
+}
+.right{
+    position:absolute;
+    height:400px;
+    width: 1000px;
+    padding: 100px;
+    color: white;
+}
+.card-group{
+    color: chartreuse;
+    text-align: justify;
+    font-size: larger;
+    padding: 3px solid rgb(212, 25, 25);
+ box-sizing: border-box;
+
+}
+.columns {
+
+  float: right;
+  width: 50%;
+  padding: 10px;
+ text-align: center;
+ 
+}
+/*  */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: rgb(7, 138, 148);
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 5px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 30px;
+}
+
+.button {
+  background-color: rgb(202, 186, 40)
+  ;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 200%;
+    height: 1000%;
+    margin-bottom: 10px;
+  }
+</style>
+<body
+background="./iuN3TW.jpg" style="height:100px; padding:  25px;">   
+    <div class="container">
+        <nav>
+            <div class="logo">TONNI</div>
+        <ul class="navitems"></ul>
+        <div><li><a href="#">HOME</a></li></div>
+            <div><li><a href="#">ABOUT</a></li></div>
+            <div><li><a href="#">SERIVES</a></li></div>
+            <div><li><a class="" href="#">PROFILE</a></li></div>
+            <div><li><a href="#">NEWS</a></li></div>
+            <div><li><a href="#">CONTENT</a></li></div>
+            <li><a href="#login">LOGIN</a>
+           
+        </uL>
+            <a href="follow" style="width: 50px; color: #cc1616; letter-spacing: 5px; min-width: 50px;word-spacing: 50%;"> follow</a>
+            <a href="#"><i class="fa-brands fa-facebook fa-beat-fade" style="color: #d61717;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-beat-fade" style="color: #dd1f1f;"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-beat" style="color: #c51919; letter-spacing: 5px;"></i></a>
+        </div>
+        </nav>
+        <link
+        <div class="wrapper">
+            <div class="cols.cols0"></div>
+            <div class="a"></div>
+        <span class="topline">HELLO I AM</span>
+            <span class="topline">ALEX...</span>
+        <H2><span class="multitext">WELCOME TO MY AGENCY</span></H2>
+        <H2><span class="multitext">PROJECTS</span></H2>
+        <div><button>DOWNLOAD</button><a href=""><button><a class="fa-sharp fa-solid fa-download fa-bounce "style= "color: #ffffff;"></i></a></div></button>
+<div class="tns">
+</div>
+        </div>
+        <div class="cols cols1"></div>
+    </div>
+    
+    <img src="./7-years-experience-removebg-preview(2).png" style="height:200px ;" width="500px"; sizes="`500px"><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
+      </div><br>
+      <!-- serivice card -->
+      <div class="s-box-container" style="height:500px;">
+        <div class="s-box">
+<img src="./images.jpg">
+        <div class="bar" style="background-color: rgb(16, 140, 161); padding: 5px solid white;"></div>
+        <h1>LIST STACK</h1>
+
+        <a class="s-btn" href="#">More</a>
+        </div>
+      
+        <div class="s-box">
+            <img src="./what-is-visual-design.jpg" />
+            <div class="bar" style="background-color: rgb(194, 7, 7); padding: 5px solid white;"></div>
+        <div class="bar"></div>
+        <h1>SALES STACK</h1>
+        <a class="s-btn" href="#">More</a>
+        </div>
+          <div class="box"></div>
+        <div class="s-box">
+            <img src="./index.png"/>
+            <div class="bar" style="background-color: rgb(194, 7, 7); padding: 5px solid white;"></div>
+        <div class="bar"></div>
+        <h1>STRATEGY</h1>
+
+        <a class="s-btn" href="#">More</a>
+        </div>
+        </div>
+<!--  --><br><br><br><br><br><br><br><br><br>
+    <h2><section class="UI/UX"></h2>
+        <div class="container"></div>
+        <h2 class="title" style="color:rgb(233, 19, 19);text-align:center;">Star Knowledge Web UI UX Design Services</h2>
+        <div class="s-heading">
+        </div>
+        <p class="ex1" style="display:inline ; color: #c51919;" >
+            THIS THE 7 YEARS EXPERIENCE OF  MOST POPULAR SOFTWAREUSING THIS COMPANY.</p>
+            <p style="font-size: 30px; color:black; text-align:left; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: fit-content;">super easy to update in acode editor.
+              all the code is abeled width commants and nively.</p>
+        <div class="s-box-container">
+        <div class="s-box" style= "border: 5px solid white;">
+            <img src="./1 z2BaY_MTgmcjgLfNyGQJ4g.png"/>
+        <div class="bar" ></div>
+        <h1>High-fidelity</h1>
+
+        <a class="s-btn" href="#">More</a>
+        </div>
+      
+        <div class="s-box" style="border: 5px solid white;">
+            <img src="./images.png" />
+        <div class="bar"></div>
+        <h1>Wireframes</h1>
+        <a class="s-btn" href="#">More</a>
+        </div>
+          <div class="box"></div>
+        <div class="s-box" style="border: 5px solid white;">
+            <img src="./633e0f41baf758f5eda930e0_Image by Freepik 1.jpg"/>
+        <div class="bar"></div>
+        <h1>Technical Design</h1>
+
+        <a class="s-btn" href="#">More</a>
+        </div>
+        </div><BR><BR><BR><br><br><br><br><br>
+        <div class="s-box-container">
+            <div class="s-box"  style="border: 5px solid white;">
+                <img src="./image1.webp"/>
+            <div class="bar" style="background-color: aqua;"></div>
+            <h1>UI/UX DDESIGN</h1>
+    
+            <a class="s-btn" href="#">More</a>
+            </div>
+          
+            <div class="s-box" style="border: 5px solid white;">
+                <img src="./what-is-visual-design.jpg" />
+            <div class="bar"></div>
+            <h1>VISUAL DDESIGN</h1>
+            
+               
+           
+            <a class="s-btn" href="#">More</a>
+            </div>
+              <div class="box"></div>
+            <div class="s-box"  style="border: 5px solid white;">
+                <img src="./header-design-landing-page.png"/>
+            <div class="bar"></div>
+            <h1>LANDINGPAGE DDESIGN</h1>
+    
+            <a class="s-btn" href="#">More</a>
+            </div>
+            </div>
+    </section><br><br><br><br><br><br><br><br><br><br>
+  <div><p><H2 style="color:rgb(189, 177, 13) ; text-align: center;">LASTEST PROJECTS:</p></H2></div>
+  <div><p><H5 style="color:rgb(211, 29, 23) ; text-align: center;">OUR LASTEST PROJECTS OF THE UI/AND UX DESIGN</p></H5></div>
+  <div class="container-fluid text-center bg-grey">
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./graphic-designer-at-work-2-500x281.jpg" alt="Paris" width="400" height="300">
+          <p><strong>SERIVES</strong></p>
+          <p>THIS THE UI/UX SERIVES </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./best-ui-ux-design-services-in-chennai.jpg" alt="New York" width="400" height="300">
+          <p><strong>UI/UX DESIGN</strong></p>
+          <p>UI/UX DESIGN METHOD OF THE WEWBSITE</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="./youtube-icon-logo-symbol-editorial-app-icons-free-vector.webp" alt="San Francisco" width="400" height="300">
+          <p><strong>YOUTUBE</strong></p>
+          <p>TO STRONG METHODS OF THEY DDESIGN</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+            <H2><span class="multitext" style="color: RED;">EXPERIENCE CREATIVE TIME LINE:</span></H2>
+            <BR>
+            <H2><span class="topline">UI/UX DESIGNER</span></H2>
+            <H2><span class="multitext">SEVER DESIGNER</span></H2>
+            <div class="right"></div>
+           <div class="center" style="display:inline ; color: #c51919;" >MOST POPULAR COMPANY OF THE YEAR 2022,THIS THE 7 YEARS EXPERIENCE OF THE COMPANY.</div>
+           <p></p><br><br><br>
+      
+<!-- company patnershiip -->
+
+  </div>
+</footer>
+</body>
+    </head>
+</html>
